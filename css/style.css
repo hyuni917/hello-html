@@ -1,3 +1,4 @@
+/* 공통 속 */
 *,
 *::before,
 *::after{
@@ -8,26 +9,33 @@ html{
 }
 body{
     min-width: 1060px;
-    font-size: 1.5em;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: Roboto, Avenir, sans-serif;
+}
+a{
+  text-decoration: none;
 }
 
 /* header */
 .header{
-    background: yellow;
+    background: #0c4b33;
     height: 72px;
+    padding: 15px 0 4px;
 }
 
 .container{
     max-width: 1400px;
-    background: red;
     margin: 0 auto; /* (top,bottom) (left,right) */
     /* margin: 10px 20px 30px 40px; top right bottom left */
     /* margin: 0; (top,bottom,left,right) */
     padding : 0 20px;
     position: relative;
+    background: red;
 }
 .logo{
     margin: 0;
+    padding-left: inherit;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,9 +45,22 @@ body{
 }
 .list{
     margin: 0;
+    font-size: 0;
 }
 .list-item{
+    font-weight: 700;
     display: inline-block;
+    font-size: 1.3rem; /* 루트값 폰트 사이즈 1.3배 */
+}
+/* .list-item > a : list-item 클래스 바로 아래 a tag */
+.list-item > a{
+    color: white;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase; /* 대분자변경 */
+}
+.list-item > a:hover{
+    color: #c9f0dd; /* 마우스 오버 색상 변경 */
 }
 
 /* main */
