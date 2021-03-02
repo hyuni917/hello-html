@@ -258,14 +258,18 @@ input[type="email"] {
     color: #859d94;
 }
 
-/* content info */
-.content-info{
-    background: green;
+/* footer */
+.footer {
+    background: #0c4b33;
+    padding: 10px 0 30px;
 }
-.links{
-    background: lightgreen;
+.footer a {
+    color: inherit;
 }
-.footer{
-    background: purple;
-    clear: both;
+.copyright {
+    font-size: 1.2rem;
+    color: #2b8c67;
+}
+.copyright a {
+    text-decoration: underline;
 }
